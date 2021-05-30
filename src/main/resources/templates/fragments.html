@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head th:fragment="head">
+
+    <meta charset="UTF-8" />
+    <title>Project Planner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+    <link th:href="@{/css/proplanner.css}" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<!--
+    FRAGMENT FOR SINGLE HOMEPAGE CARD
+-->
+<div class="card" style="width: 18rem;" th:fragment="singleCard">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">Sketch title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="/canvas" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+
+
+</body>
+</html>
