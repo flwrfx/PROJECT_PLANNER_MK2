@@ -16,14 +16,14 @@ function setup() {
 
 saveDrawing = createButton('SAVE DRAWING');
   saveDrawing.position(eraseButton.x + eraseButton.width, 0);
-  saveDrawing.mousePressed(saveIt);
-
-  strokeWeight(8);
-  stroke(0);
+  saveDrawing.mousePressed(saveItem);
 
 loadDrawing = createButton('load DRAWING');
     loadDrawing.position(saveDrawing.x + saveDrawing.width, 0);
-    loadDrawing.mousePressed(loadIt);
+    loadDrawing.mousePressed(getItem);
+
+  strokeWeight(8);
+  stroke(0);
 
 }//setup
 
@@ -36,11 +36,3 @@ function touchMoved() {
   return false;
 }
 
-function saveIt(){
-    saveItem("myCanvas", cnv);
-
-}
-
-function loadIt(){
-    getItem("myCanvas");
-}

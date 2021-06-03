@@ -1,7 +1,19 @@
 canvas {
-    border: 2px solid black;
+    border: 5px solid black;
 }
 
-.homepageGrid{
 
+
+.card{
+    padding-top: 2%;
+    padding-bottom: 2%
+    border: 1px solid black;
+    flex: 1 0 33%;
+}
+
+.homepageGrid {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  flex-wrap: wrap;
 }

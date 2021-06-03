@@ -3,20 +3,31 @@
 <head th:replace="fragments :: head">
 </head>
 
-<body class="container-fluid">
+<body>
     <!-- http://fabricjs.com/docs/fabric.Canvas.html -->
     <!-- http://fabricjs.com/freedrawing -->
 
+<!--    <div class="navbar-fixed-top">  <h1>Hewwo</h1>                  </div>-->
 
-    <div th:replace="fragments :: singleCard"></div>
+    <div th:replace="fragments :: page-header"></div>
 
-<!--    <div>-->
-<!--        <ul>-->
-<!--            <li th:each="canvas : $">-->
-<!--                <div th:replace="fragments :: singleCard"></div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
+
+<div class="homepageGrid"><!-- -->
+
+
+        <th:block th:replace="fragments :: singleCard"></th:block>
+        <th:block th:replace="fragments :: singleCard"></th:block>
+        <th:block th:replace="fragments :: singleCard"></th:block>
+        <th:block th:replace="fragments :: singleCard"></th:block>
+        <th:block th:replace="fragments :: singleCard"></th:block>
+        <th:block th:replace="fragments :: singleCard"></th:block>
+        <th:block th:replace="fragments :: singleCard"></th:block>
+        <th:block th:replace="fragments :: singleCard"></th:block>
+
+
+
+</div>
+
 
 </body>
 </html>
