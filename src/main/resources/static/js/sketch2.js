@@ -4,6 +4,7 @@ var currentlyDrawing = false;
 function setup() {
   createCanvas(710, 400);
   background(102);
+
 //  canvas.mousePressed(startPath);
 //  canvas.mouseReleased(endPath);
 }

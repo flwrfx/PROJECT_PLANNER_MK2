@@ -6,6 +6,7 @@ canvas {
 
 .card{
     padding-top: 2%;
+    width: 18rem;
     padding-bottom: 2%
     border: 1px solid black;
     flex: 1 0 33%;

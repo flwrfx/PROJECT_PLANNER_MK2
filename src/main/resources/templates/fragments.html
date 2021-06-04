@@ -14,8 +14,8 @@
 <!--
     FRAGMENT FOR SINGLE HOMEPAGE CARD
 -->
-<div class="card" style="width: 18rem;" th:fragment="singleCard">
-    <img class="card-img-top" src="static/images/tempcardtop.png" alt="Card image cap">
+<div class="card" th:fragment="singleCard">
+    <img class="card-img-top" th:src="@{https://image.shutterstock.com/image-vector/household-home-objects-collection-hand-600w-131075837.jpg}" alt="Card image cap">
     <div class="card-body">
         <h5 class="card-title">{SKETCH TITLE}</h5>
         <a href="/canvas" class="btn btn-primary">Open sketch</a>
